@@ -1,8 +1,22 @@
 # Heart Failure Classification
 
-## PROJECT STATUS: INCOMPLETE
+## PROJECT STATUS: COMPLETE
+
 
 ### Introduction
+This project uses data from https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction/data for a classification problem, using a dataset combining features that can machine learning models can use to try and predict heart failure/disease.
+
+
+### Technologies
+- Jupyter Notebook
+- Python
+    - pandas
+    - numpy
+    - scikit-learn
+    - matplotlib
+    - xgboost
+    - seaborn
+
 
 ### Data
 
@@ -20,3 +34,12 @@
 - Oldpeak: oldpeak = ST [Numeric value measured in depression]
 - ST_Slope: the slope of the peak exercise ST segment [Up: upsloping, Flat: flat, Down: downsloping]
 - HeartDisease: output class [1: heart disease, 0: Normal]
+
+
+### Conclusions
+
+The models used in this project all performed well with accuracy scores of over 85% meaning that individuals are correctly classified with heart disease or not the majority of the time.
+
+The Random Forest model performed the best when evaluated against the accuracy score, with the cross validation testing of all 3 models reporting similar figures, suggesting none of the models displayed signs of overfitting.
+
+The most important features for identifying heart disease turned out to be the ST segment during exercise, as well as the oldpeak (ST depression), cholesterol levels, and maximum heart rate. Men are more likely than women to have heart disease, and the older you are, the more likely you are, on average, to have heart disease.
